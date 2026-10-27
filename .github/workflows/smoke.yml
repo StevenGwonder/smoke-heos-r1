@@ -1,0 +1,10 @@
+name: smoke
+on:
+  pull_request:
+  push:
+    branches: [main, master]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: "true"
